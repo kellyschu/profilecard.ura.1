@@ -1,15 +1,18 @@
-import "./App.css";
+import "./styles.css";
+import Avatar from "./Avatar";
+import Intro from "./Intro";
+import SkillList from "./SkillList";
 
 function App() {
   return (
     <div className="card">
-      {/* <Avatar /> */}
+      <Avatar />
       <div className="data">
-        {/* <Intro /> */}
+        <Intro />
         {/* Should contain one Skill component
         for each web dev skill that you have,
         customized with props */}
-        {/* <SkillList /> */}
+        <SkillList />
       </div>
     </div>
   );
