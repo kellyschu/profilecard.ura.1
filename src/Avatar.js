@@ -1,9 +1,10 @@
 import "./styles.css";
+import avatar from "./headshot.png";
 
 function Avatar() {
   return (
     <div className="avatar">
-      <h1>Avatar</h1>
+      <img src={avatar} alt="avatar" className="avatar" />
     </div>
   );
 }
