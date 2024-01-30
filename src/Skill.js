@@ -1,14 +1,14 @@
 import "./styles.css";
 
-function Skill() {
+function Skill(props) {
   return (
     <div>
-      <div className="skill">JavaScript</div>
-      <div className="skill">HTML + CSS</div>
-      <div className="skill">GitHub</div>
-      <div className="skill">Netlify</div>
-      <div className="skill">React</div>
-      <div className="skill">Node.js</div>
+      <div className="skill" style={{ backgroundColor: props.color }}>
+        <span>
+          {props.skill}
+          {props.emoji}
+        </span>
+      </div>
     </div>
   );
 }
