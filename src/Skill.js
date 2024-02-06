@@ -1,12 +1,14 @@
 import "./styles.css";
 
-function Skill(props) {
+function Skill({ skill, color, level }) {
   return (
     <div>
-      <div className="skill" style={{ backgroundColor: props.color }}>
+      <div className="skill" style={{ backgroundColor: color }}>
+        <span>{skill}</span>
         <span>
-          {props.skill}
-          {props.emoji}
+          {level === "beginner" && "👶"}
+          {level === "intermediate" && "🥈"}
+          {level === "advanced" && "🏆"}
         </span>
       </div>
     </div>

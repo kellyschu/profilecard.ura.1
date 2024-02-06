@@ -4,11 +4,11 @@ import Skill from "./Skill";
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill="JavaScript" emoji="⚡️" color="blue" />
-      <Skill skill="HTML + CSS" emoji="🎨" color="pink" />
-      <Skill skill="GitHub" emoji="🐙" color="green" />
-      <Skill skill="Netlify" emoji="🌐" color="red" />
-      <Skill skill="React" emoji="⚛️" color="orange" />
+      <Skill skill="JavaScript" level="beginner" color="blue" />
+      <Skill skill="HTML + CSS" level="intermediate" color="pink" />
+      <Skill skill="GitHub" level="advanced" color="blue" />
+      <Skill skill="Netlify" level="advanced" color="red" />
+      <Skill skill="React" level="beginner" color="orange" />
     </div>
   );
 }
