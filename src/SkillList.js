@@ -1,14 +1,20 @@
 import "./styles.css";
 import Skill from "./Skill";
-
+const skills = [
+  { skill: "JavaScript", level: "intermediate" },
+  { skill: "HTML + CSS", level: "advanced" },
+  { skill: "GitHub", level: "intermediate" },
+  { skill: "Netlify", level: "advanced" },
+  { skill: "React", level: "intermediate" },
+  { skill: "Next.js", level: "beginner" },
+  { skill: "Redux", level: "beginner" },
+];
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill="JavaScript" level="beginner" color="blue" />
-      <Skill skill="HTML + CSS" level="intermediate" color="pink" />
-      <Skill skill="GitHub" level="advanced" color="blue" />
-      <Skill skill="Netlify" level="advanced" color="red" />
-      <Skill skill="React" level="beginner" color="orange" />
+      {skills.map((skill) => (
+        <Skill skill={skill.skill} level={skill.level} />
+      ))}
     </div>
   );
 }
